@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:theme="@style/Transparent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结合室内地图用于展示定位SDK室内定位效果"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textView"
+        android:clickable="true"
+        android:screenOrientation="portrait" />
+
+    <LinearLayout
+        android:id="@+id/leaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default_small"
+            android:onClick="myOnclick" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default_small"
+            android:onClick="myOnclick"
+            android:text="回来" />
+        <!--android:visibility="gone"-->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default_small"
+            android:onClick="myOnclick"
+            android:text="取点" />
+        <!--android:visibility="gone"-->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default_small"
+            android:onClick="myOnclick"
+            android:text="清除" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default_small"
+            android:onClick="myOnclick"
+            android:text="保存" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/leaner"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="myOnclick"
+        android:text="显示" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaner"
+        android:layout_toLeftOf="@id/button6"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="myOnclick"
+        android:text="开启一条路线" />
+    <Button
+        android:id="@+id/endPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaner"
+        android:layout_toLeftOf="@id/button7"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="myOnclick"
+        android:text="结束取点" />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_below="@id/leaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/endPoint"
+        android:textColor="@android:color/holo_red_dark"/>
+    <!--android:background="@android:color/transparent"-->
+</RelativeLayout>

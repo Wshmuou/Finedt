@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_baidu_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/dingWei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="dingWeiOnclick"
+        android:text="基礎定位" />
+
+    <Button
+        android:id="@+id/shiLeiDingWei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="dingWeiOnclick"
+        android:text="室内定位" />
+
+    <Button
+        android:id="@+id/lineSelect"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:onClick="dingWeiOnclick"
+        android:text="路线选择"/>
+
+</LinearLayout>
